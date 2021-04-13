@@ -188,24 +188,24 @@ function game(user, computer){
 }
 
 const hand = (userInput, computerInput) => {
-  if(userInput === "Scissors" && computerInput === "Paper") {
+  if(userInput === "scissors" && computerInput === "paper") {
     return "you win!"
-  } else if(userInput === "Paper" && computerInput === "Scissors") {
+  } else if(userInput === "paper" && computerInput === "scissors") {
     return "you lose!"
-  } else if(userInput === "Rock" && computerInput === "Paper") {
+  } else if(userInput === "rock" && computerInput === "paper") {
     return "you lose!"
-  } else if(userInput === "Paper" && computerInput === "Rock") {
+  } else if(userInput === "paper" && computerInput === "rock") {
     return "you win!"
-  } else if(userInput === "Scissors" && computerInput === "Rock") {
+  } else if(userInput === "scissors" && computerInput === "rock") {
     return "you lose!"
-  } else if(userInput === "Rock" && computerInput === "Scissors") {
+  } else if(userInput === "rock" && computerInput === "scissors") {
     return "you win!"
-  } else if(userInput === "Rock" && computerInput === "Rock") {
-    return "it's a tie..."
-  } else if(userInput === "Paper" && computerInput === "Paper") {
-    return "it's a tie..."
-  } else if(userInput === "Scissors" && computerInput === "Scissors") {
-    return "it's a tie..."
+  } else if(userInput === "rock" && computerInput === "rock") {
+    return "it's a tie"
+  } else if(userInput === "paper" && computerInput === "paper") {
+    return "it's a tie"
+  } else if(userInput === "scissors" && computerInput === "scissors") {
+    return "it's a tie"
   }
 }
   
