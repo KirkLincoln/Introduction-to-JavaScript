@@ -19,7 +19,7 @@ Do the following:
 */
 const votingAge = 18;
 if(votingAge >= 18) {
-  return console.log("true");
+  console.log("true");
 }
 
 
@@ -237,8 +237,8 @@ Using the feet function below do the following:
 */
 
 function feet(centimeters){
-    return centimeters*0.0328084;
-  }
+    return centimeters/30.48;
+}
  
 
 
@@ -253,10 +253,9 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(cycles){
-    for(let i = cycles; i > 0; --i) {
-      console.log(`${i} bottles of soda on the wall, 
-      ${i} bottles of soda, take one down pass it around 
-      ${i-1} bottles of soda on the wall`)
+    for(let i = cycles; i >= 1; i--) {
+      return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`
+      //??
     }
 }
 
@@ -280,11 +279,11 @@ function grade(grade){
   if(90 <= grade && grade <= 100) {
     return 'you got an A';
   } else if(80 <= grade && grade < 90) {
-    return 'you got an B';
+    return 'you got a B';
   } else if(70 <= grade && grade < 80) {
-    return 'you got an C';
+    return 'you got a C';
   } else if(60 <= grade && grade < 70) {
-    return 'you got an D';
+    return 'you got a D';
   } else if(grade < 60) {
     return 'you got an F';
   } else {
